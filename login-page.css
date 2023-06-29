@@ -1,0 +1,165 @@
+@font-face {
+  font-family: "Spotify";
+  src: url(./spotify-fonts/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spotify";
+  color: white;
+  transition: all ease-in-out 0.1s;
+}
+
+a:hover {
+  color: #1fdf64;
+}
+
+/* HEADER */
+
+.header {
+  height: 18vh;
+  background-color: black;
+}
+
+.logo {
+  width: 7.5rem;
+  padding: 2rem 0;
+  margin-left: 3rem;
+}
+
+.logo-img {
+  width: 100%;
+}
+/* CONTAINER */
+
+.bg-wrapper {
+  min-height: calc(200vh - 18vh);
+  background: linear-gradient(to bottom, #1c1c1c, #0e0e0e);
+  display: flex;
+  justify-content: center;
+}
+
+.main-box {
+  width: 58vw;
+  /* height: 500px; */
+  /* border: 2px solid red; */
+  background-color: black;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.login-title {
+  margin: 80px 0px 48px;
+}
+
+.login-title h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.login-with {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.25rem;
+}
+
+.login-with img {
+  padding-right: 2rem;
+}
+
+
+.continue-with {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: 0.1px solid rgb(109, 109, 109);
+  border-radius: 500px;
+  padding: 0.75rem 2rem;
+  width: 18rem;
+  font-weight: 600;
+  box-sizing: border-box;
+  margin-bottom: 0.5rem ;
+}
+
+.test2{
+    display: block;
+}
+
+
+.continue-with:hover{
+    border-color: azure;
+} 
+
+hr {
+  margin: 32px 100px;
+  border-color: rgb(41, 41, 41) currentcolor currentcolor;
+  border-style: solid none none;
+  border-width: 1px medium medium;
+  border-image: none 100% / 1 / 0 stretch;
+}
+
+.labelgroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 0.5rem;
+  width: 22vw;
+  margin: auto;
+}
+
+.labelgroup label {
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.input-fields {
+  width: 18rem;
+  background: transparent;
+  padding: 0.75rem 0.5rem;
+  border-radius: 0.25rem;
+  border: 2px solid #858484;
+  outline: none;
+  margin-bottom: 0.5rem;
+}
+
+.input-fields:hover {
+  border: 2px solid white;
+}
+
+.remember-me {
+  display: flex;
+  width: 22vw;
+  margin: auto;
+  /* align-items: flex-start; */
+  gap: 0.7rem;
+}
+
+.login-btn {
+  background-color: #1fdf64;
+  color: black;
+  padding: 0.75rem 1rem;
+  width: 22vw;
+  border-radius: 1.5rem;
+  border: none;
+  margin: 2rem 0;
+  font-weight: 700;
+}
+
+.login-btn:hover {
+  transform: scale(1.04);
+}
+
+.signup {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.signup p {
+  color: #858484;
+}
