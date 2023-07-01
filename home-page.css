@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  border: 1px solid red;
+}
+
+@font-face {
+  font-family: "Spotify Font";
+  src: url(./CircularSp.woff2) format(".woff2");
+}
+
+body {
+  font-family: "Spotify Font", sans-serif;
+  background-color: black;
+}
+
+/* this is just a wrapper covering entire body */
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.sidebar {
+  height: 100%;
+  width: 30%;
+  border-radius: 0.7rem;
+  margin: 0.5rem;
+}
+
+.navigation {
+  height: 20%;
+  border-radius: 0.7rem;
+  background-color: #121212;
+
+}
+
+.nav-list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  gap: 1rem;
+
+}
+
+.nav-item{
+  margin-inline: 1rem;
+
+}
+
+
+.nav-item a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 1.5rem;
+  margin-right: 1rem;
+}
+
+.library {
+  height: 80%;
+  border-radius: 0.7rem;
+  margin-top: 0.5rem;
+  background-color: #121212;
+
+}
+
+.main-content {
+  height: 100%;
+  width: 70%;
+  background-color: #121212;
+  border-radius: 0.7rem;
+  margin: 0.5rem;
+}
+
+.header {
+  height: 12%;
+}
+
+.player {
+  height: 16vh;
+  width: 100%;
+  background-color: #121212;
+  position: absolute;
+  bottom: 0;
+}
+
+/* ----------------------------------------------------------------------- */
+.left-upper-box {
+  background-color: #413f3f;
+  height: 6rem;
+  width: 26rem;
+  border-radius: 0.5rem;
+}
+
+.icon-setting {
+  width: 15px;
+  margin-right: 1.5rem;
+}
+
+.home-search {
+  padding: 11px 15px;
+  margin: 4px;
+  display: inline-block;
+}
+
+.home-search a {
+  text-decoration: none;
+  font-weight: 700;
+  color: rgb(182, 179, 179);
+}
+
+.mod-both {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.mod-search:hover {
+  color: white;
+}
