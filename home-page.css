@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   color: white;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 @font-face {
@@ -13,6 +13,7 @@
 body {
   font-family: "Spotify Font", sans-serif;
   background-color: black;
+  overflow: hidden;
 }
 
 /* this is just a wrapper covering entire body */
@@ -23,17 +24,17 @@ body {
 }
 
 .sidebar {
-  height: 100%;
+  height: calc(100% - 0.5rem);
   width: 30%;
   border-radius: 0.7rem;
   margin: 0.5rem;
+  
 }
 
 .navigation {
   height: 20%;
   border-radius: 0.7rem;
   background-color: #121212;
-
 }
 
 .nav-list {
@@ -62,25 +63,68 @@ body {
   width: 1.5rem;
   margin-right: 1rem;
 }
-
+/* ------------------------------------- */
 .library {
-  height: 80%;
+  height: calc(80% - 1rem);
   border-radius: 0.7rem;
   margin-top: 0.5rem;
   background-color: #121212;
 
 }
 
+.library-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.your-library{
+  height: 2rem;
+}
+
+.quick-links{
+  height: 2rem;
+}
+
+.search{
+  height: 2rem;
+
+}
+.artist{
+  /* height: 100%; */
+  height: calc(80% - 6rem);
+}
+
+.icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  /* border: 1px solid yellow; */
+
+}
+
+.icon svg {
+  fill: currentColor;
+}
+
+/* ------------------------------------- */
 .main-content {
-  height: 100%;
+  height: calc(100% - 1rem);
   width: 70%;
   background-color: #121212;
   border-radius: 0.7rem;
   margin: 0.5rem;
+  overflow-y: auto;
+  /* border: 1px solid yellow; */
+
+  
 }
 
-.header {
+.main-content .header {
   height: 12%;
+  position: sticky;
+  top:0;
+  background-color: aqua;
 }
 
 .player {
